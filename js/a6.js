@@ -1,4 +1,3 @@
-alert("help")
         var numPat  = /^[0-9]+$/;
         var alphaPat  = /^[a-zA-Z]+$/;
         var emailRegEx = /^([A-Za-z0-9_\-\.#~\$=;%\*,\!\+:&()])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,6})$/;
@@ -78,11 +77,13 @@ alert("help")
                     //alert("good CC");
                       document.getElementById('ccNote').innerHTML = "";
                      document.getElementById('ccNum').style.borderColor = "lightgray";
+                     return true;
                  }
                  else{
                      alert("Credit Card Number Error");
                       document.getElementById('ccNum').style.borderColor = "red";
                       document.getElementById('ccNote').innerHTML = "Credit Card is Invalid, Try Again";
+                     return false;
                  }
              }
             
@@ -492,7 +493,10 @@ alert("help")
             if(year < 16 && month < currentMonth){
                 alertStr += "Credit Card is Expired\n"; badInput++;
             }
-            ccSubmitCheck("ccNum");
+           
+            if(ccSubmitCheck("ccNum") == false){
+                 badInput++;
+            }
               
       //        console.log("month = " + month + " year " + year);
             if(badInput > 0){
