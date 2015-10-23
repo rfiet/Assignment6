@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Assignment 6</title>
+            <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/jumbotron-narrow.css" rel="stylesheet">
+        <link href="css/a6.css" rel="stylesheet">       
+
+    </head>
+    <body>
+       <div class="container">
+       <header>
+           
+          <h2> Cosa Nostra Pizzeria</h2>
+          <h2> Total: $<span id="priceTotal">0.00</span></h2>
+       </header>
+       <main >
+          <hr>
+          <form name="pizzaForm" id="pizzaForm" >
+              <section id="contact">
+                   <p><label>Name</label><input name="name" type="text" value="blah"></p>
+                   <p id="address" class="floatLeft"><label>Street Address </label><input type="text" name="address"  value="123 blah"> 
+                      &nbsp;&nbsp;
+                       <select name="addressType">
+                           <option>Choose Address Type</option>
+                           <option>House</option>
+                           <option>Apartment</option>
+                           <option>Business</option>
+                            <option>Hotel</option>
+                            <option>Campus</option>
+                            <option>Dorm</option>
+                            <option>Other</option>
+                       </select>
+                   </p>
+                   <p class="floatLeft aptLine"><label>Apt/Unit #</label><input type="text" name="apt"></p>
+                  <p id="other"><label>Other</label> <input type="text" name="other"></p>
+                   <p class="clearFloat"></p>
+                   <p class="floatLeft"><label>City </label><input type="text" name="city" value="blah blah"></p>
+                   <p class="floatLeft" id="stateInput"><label>State</label> <input type="text" name="state" value="bl"></p>
+                   <p class="floatLeft" id="zipInput"><label>Zip code </label><input type="text" name="zip" value="12345"></p>
+                    <p class="clearFloat"></p>
+                   <p class="floatLeft"><label>Phone </label><input type="text" name="phone" value="123-123-1234"></p>
+                  <p class="floatLeft" id="emailLine"><label>Email</label> <input type="text" name="email" value="blah@blah.com"></p>
+                  <p class="clearFloat"></p>
+               </section>
+               <hr>
+               <section id="pizzaChoice">
+                   <p>Choose dough type:</p>
+                   <input type="radio" name="dough" value="hand">Hand Tossed
+                   <input type="radio" name="dough" value="thin">Thin Crust
+                   <input type="radio" name="dough" value="nyStyle">New York Style
+                   <input type="radio" name="dough" value="glutenFree">Gluten Free
+               </section>
+               
+               
+               <section id="cheese">
+                   <select name="cheese" >
+                        <option value="default">Choose Cheese</option>
+                       <option value="0">Light: no charge</option>
+                       <option value="0">Normal (default): no charge</option>
+                       <option value="2.99">Extra: +$2.99</option>
+                       <option value="3.99">Double: +$3.99</option>
+                   </select>
+               </section>
+               <section id="sauce">
+                   <select name="sauce" >
+                        <option value="options">Sauce Options</option>
+                       <option value="0">Regular Tomato: no charge</option>
+                       <option value=".99">Hearty Tomato: +$.99</option>
+                       <option value="1.99">BBQ Sauce: +$1.99</option>
+                   </select>
+               </section>
+               <section id="toppings">
+                   <p>Each Topping: $.99</p>
+                   <input type="checkbox" name="toppings" value="pepperoni">Pepperoni
+                   <input type="checkbox" name="toppings" value="sausage">Sausage
+                   <input type="checkbox" name="toppings" value="ham">Ham 
+                   <input type="checkbox" name="toppings" value="bacon">Bacon
+                   <input type="checkbox" name="toppings" value="salami">Salami<br>
+                   <input type="checkbox" name="toppings" value="peppers">Peppers
+                   <input type="checkbox" name="toppings" value="olives">Olives
+                   <input type="checkbox" name="toppings" value="jalapenos">Jalapenos
+                   <input type="checkbox" name="toppings" value="mushrooms">Mushrooms<br>
+                   <input type="checkbox" name="toppings" value="pineapple">Pineapple
+                   <input type="checkbox" name="toppings" value="onion">Onion
+               </section>
+               
+               <section id="finishPizzaBuild">
+                   <button>Finish building Pizza</button>
+                   
+               </section>
+               <section id="ccInfo"> 
+                    <p id="useDelivery"><input type="checkbox" id="copyDelivery" name="useDelivery" value="delivery">Check to use delivery contact information
+                    </p>
+                   <p><label>Name</label><input name="ccName" type="text" value=""></p>
+                   <p id="ccAddress"  class="floatLeft"><label>Street Address</label> <input type="text" name="ccAddress"  value=""> 
+                      &nbsp;&nbsp;
+                   </p>
+                   <p class="floatLeft aptLine"><label>Apt/Unit #</label> <input type="text" name="ccApt" value=""></p>
+                   <p class="clearFloat"></p>
+                   <p><label>City </label><input type="text" name="ccCity" value=""></p>
+                   <p><label>State </label><input type="text" name="ccState" value=""></p>
+                   <p><label>Zip Code </label><input type="text" name="ccZip" value=""></p>
+                   <p><label>Phone </label><input type="text" name="ccPhone" value=""></p>
+
+                    <p><label>Credit Card #</label> <input type="text" value="" id="ccNum"> <span id="ccNote"></span></p>
+                    <p><label>Expiration Date</label><select name="expMonth">
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <select name="expYear">
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                        </select>
+                    </p>
+                    <p><label>CVC Code </label><input type="text" id="cvc" size="3"> <span id="cardType"></span></p>
+                    <p><button id="submitOrder">Submit Order</button></p>
+               </section>
+           </form>
+       </main>
+        </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/a6.js"></script>
+    </body>
+    
+</html>

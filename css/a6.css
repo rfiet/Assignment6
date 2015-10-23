@@ -1,0 +1,98 @@
+ 
+            body{
+              font-size: 1.8em;  
+                background-color: #faf9f6;
+                color: #23671c;
+                background-image: url("../images/pizza-de-pepperoni.jpg"); 
+            }
+            input{
+                 padding: 2px;   
+            }
+            label{
+                 display: block; 
+                font-weight:200;
+            }
+            .container{
+                background-image: url("../images/logo.png"); 
+                	background-repeat: no-repeat;
+                	background-attachment: scroll;
+                background-position: 300px 40px;
+                background-color: #faf9f6;
+                padding-bottom: 60px;
+                opacity: 0.95;
+            }
+            #other{
+                
+                 display: none;   
+            }
+            #cheese, #sauce, #toppings, #ccInfo, #finishPizzaBuild{
+                    display: none;
+            }
+            #finishPizzaBuild{
+                 margin-top: 40px;   
+            }
+            h2:first-child{
+                float: left;
+                text-align: center;
+                margin-left: 20%;
+                color: #0e8802;
+            }
+            h2:last-child{
+                float: right;
+                 color: #0e8802;
+            }
+            main{
+                clear: both;
+            }
+            #ccNote{
+                margin-left: 15px;
+                color: red;
+            }
+            #cardType{
+                margin-left: 15px;
+                color: blue;
+            }
+            .floatLeft{
+                 float:left;   
+            }
+            input[name="apt"], input[name="ccApt"] { 
+                width: 70px;
+                margin-left: 5px;
+            }
+            input[name="state"] { 
+                width: 70px;
+                margin-left: 5px;
+            }
+            input[name="zip"] { 
+                width: 90px;
+                margin-left: 5px;
+            }
+            input[name="dough"], input[name="toppings"]{ 
+                width: 50px;
+                margin-left: 5px;
+            }
+            select[name="cheese"], select[name="sauce"]{
+                height: 35px;
+                margin-bottom: 15px;
+            }
+            .clearFloat{
+                clear:both;
+            }
+            .aptLine{
+              margin-left:25px;   
+            }
+            #stateInput{
+                margin-left: 20px;
+            }
+            
+            #zipInput{
+                margin-left: 20px;              
+            }
+            #emailLine{
+                margin-left: 20px; 
+            }
+            #pizzaPrice{
+                 margin-top: 15px;
+                 margin-bottom: 15px;
+                height: 35px;
+            }
